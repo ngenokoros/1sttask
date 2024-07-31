@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Lists</title>
+    <style>
+       body {
+background-size: cover
+        ;
+           background-image: url("images/sherry-christian-8Myh76_3M2U-unsplash.jpg");
+    font-family: Arial, sans-serif;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(57, 246, 1);
+}
+
+.style-me {
+    list-style: lower-greek;
+    padding: 10px;
+}
+.style-me ul {
+   color: rgba(248, 6, 220, 0.67);
+}
+
+.style-me li {
+    margin: 20px 10px;
+    padding: 1px;
+    border-radius: 10px;
+    position:relative;
+    color: goldenrod;
+    font-size: 28px;
+}
+
+.style-me li:before {
+    content: "";
+    background-image: url('images/sherry-christian-8Myh76_3M2U-unsplash.jpg'); /* Path to your image */
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(242, 234, 234, 0.74);
+
+
+        <img src="images/sherry-christian-8Myh76_3M2U-unsplash.jpg" height="4000" width="6000"/>
+    </style>
+
+}
+</head>
+<body>
+    <h1>Styled Ordered List</h1>
+    <ol class="style-me">
+        <li>burn</li>
+        <li>bread</li>
+        <li>cake</li>
+    </ol>
+
+    <h1>Styled Unordered List</h1>
+    <ul class="style-me">
+        <li>tomy</li>
+        <li>clain </li>
+        <li>hillfiger</li>
+    </ul>
+</body>
+</html>
+

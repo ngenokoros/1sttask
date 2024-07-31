@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM-TRY</title>
+     <style> body{
+         background-color: #aaaaaa;
+     }
+        h1 {color: whitesmoke;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        form {background-color:blueviolet;
+            color: whitesmoke;
+        }
+        input, textarea, button {
+            width: 10%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            background-color: #aaaaaa;
+            color: whitesmoke;
+        }
+        button {
+            border-radius: 10px;
+            background-color:gray;
+            color: white;
+            font-weight: bold;
+            border:whitesmoke ;
+
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="color: blue"><b>Send us a message</b>  </h1>
+<form action="">
+    <legend>goodluck to ur apllication</legend>
+    <input style="border: red" placeholder="Name" type="text" required>
+    <input placeholder="Email" type="email" required><br><br>
+    <input placeholder="phone" type="number" required>
+    <input placeholder="Subject" type="text" required><br><br>
+    <select name="" id="" required>
+        <option value="" selected>Gender</option>
+        <option value="male">male</option>
+        <option value="femal">female</option>
+    </select><br>
+     <label for="country">Country:</label>
+        <input list="countries" name="country" id="country">
+        <datalist id="countries">
+            <option value="United States">
+            <option value="Canada">
+            <option value="Australia">
+            <option value="United Kingdom">
+        </datalist>
+        <br><br>
+<!--    radio used to make button nd use the same name-->
+    <label for="">G</label>
+    <input type="radio" value="green" name="color">
+    <label for="">R</label>
+    <input type="radio" value="red" name="color">
+    <label for="">B</label>
+    <input type="radio" value="blue" name="color">
+    <input type="checkbox" name="tick" id="">
+    <br><br><br>
+     <textarea id="message" placeholder="message" name="message" rows="4" cols="100"></textarea><br><br>
+<button>submit</button>
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
