@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color:
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  .body {background-color: #28a745 ;}
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-card {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    width: 20%;
+}
+
+.contact-card h2 {
+    margin-top: 0;
+}
+
+.contact-card p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.right-panel {
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+}
+
+.right-panel form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel label {
+    margin-bottom: 5px;
+}
+
+.right-panel input[type="text"],
+.right-panel input[type="tel"],
+.right-panel input[type="email"],
+.right-panel input[type="text"],
+.right-panel textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+}
+
+.right-panel button {
+    background-color: #88c057;
+    color: white;
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius:5px;
+    width:100px;
+      box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.3);
+}
+
+.right-panel button:hover {
+    background-color: #76a045;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container body">
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <p>#298 TDI City, Sector 110, Mohali, Punjab, India-140307</p>
+            <p>Email: contact@solutionworld247.com</p>
+            <p>Phone: +91 9305419864</p><br><br><br><br><br><br>
+            <div class="social-icons">
+                <a href="#" title="Facebook"></a>
+                <a href="#" title="Twitter"></a>
+                <a href="#" title="LinkedIn"></a>
+                <a href="#" title="YouTube"></a>
+            </div>
+        </div>
+        <div class="right-panel body">
+            <form action="submit.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Write your message here...</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

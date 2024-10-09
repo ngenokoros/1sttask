@@ -1,0 +1,6 @@
+<!-- In your main HTML file (a.html) -->
+<html>
+  <body>
+    <object type="text/html" data="b.html"></object>
+  </body>
+</html>

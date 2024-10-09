@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    /* Styling for the contact form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-panel {
+    background-color: #1E6F5C; /* Dark green color */
+    color: white;
+    padding: 20px;
+    width: 40%;
+}
+
+.right-panel {
+    background-color: #F7F7F7; /* Light grey color */
+    padding: 20px;
+    width: 50%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    margin-right: 5px; /* Spacing between icons */
+    color: white; /* Icon color */
+    /* Additional styling for icons can be added here */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50; /* Green Color */
+    color: white; /* Text Color */
+    padding: 14px 20px; /* Padding inside button */
+    margin-top: 8px; /* Space above button */
+    border: none; /* No border */
+    cursor: pointer;
+    width: 100%; /* Full-width button */
+}
+    </style>
+</head>
+<body>
+<div class="contact-form">
+        <div class="left>
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-phone></i> +918 5555 5555</p>
+            <p><i class="fas fa-envelope"></i> contact@yourdomain.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 City, Sector 10, Punjab, India - 140007</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="right-panel">
+            <form action="submit.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Write your message here...</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+
+</body>
+</html>

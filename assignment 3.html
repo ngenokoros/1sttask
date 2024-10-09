@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <style>    /* Styling for the contact form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-panel{
+    background-color: cadetblue;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.left-panel h2,
+.left-panel p,
+.social-icons i {
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.right-panel {
+    background-color: #ffffff;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5pt solid #2c665d;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #2c665d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+    <div class="contact-form">
+        <div class="left-panel">
+            <h2>Contact Information</h2>
+            <p><i class="phone></i> +918 5555 5555</p>
+            <p><i class="envelope"></i> contact@yourdomain.com</p>
+            <p><i class="map-marker-alt"></i> 1234 City, Sector 10, Punjab, India - 140007</p>
+            <div class="social-icons">
+                <i class="facebook"></i>
+                <i class="twitter"></i>
+                <i class="linkedin"></i>
+                <i class="instagram"></i>
+            </div>
+        </div>
+        <div class="right-panel">
+            <form action="submit.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Write your message here...</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .contact-info {
+            background-color: #006d77; /* Dark green color */
+            color: white;
+            padding: 20px;
+            width: 300px; /* Adjust as needed */
+            border-radius: 8px; /* Rounded corners */
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons i {
+            font-size: 20px;
+        }
+        .message-form {
+            background-color: #83c5be; /* Lighter green color */
+            padding: 20px;
+            width: 300px; /* Adjust as needed */
+            border-radius: 8px; /* Rounded corners */
+        }
+        .message-form input,
+        .message-form textarea {
+            width: 10%;
+            margin-bottom: 10px;
+            padding: 0;
+            border: 0;
+            border-radius: 0px;
+        }
+        .message-form button {
+            background-color: darkgreen;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 1px;
+            padding:5px;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="map-marker-alt"></i> 123 City, Sector 10, Punjab, India - 140007</p>
+            <p><i class="envelope"></i> contact@yourdomain.com</p>
+            <p><i class="phone"></i> +918 5555 5555</p>
+            <div class="social-icons">
+                <i class="facebook"></i>
+                <i class="twitter"></i>
+                <i class="linkedin"></i>
+                <i class="instagram"></i>
+            </div>
+        </div>
+        <div class="message-form">
+            <form action="submit.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" name="mobile" required><br><br>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required><br><br>
+                <label for="message">Write your message here...</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
